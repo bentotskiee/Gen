@@ -1,0 +1,253 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px;
+}
+
+/* Light Mode: Professional Techy Look */
+body.light-mode {
+    background: linear-gradient(135deg, #f7f8fa, #e9ebf0);
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #1c1f24, #0d1117);
+    color: #e0e0e0;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    animation: text-glow 3s infinite ease-in-out;
+}
+
+/* Light Mode Title */
+body.light-mode h1 {
+    color: #2b4e79;
+    text-shadow: 0 0 12px rgba(43, 78, 121, 0.3);
+}
+
+/* Dark Mode Title */
+body.dark-mode h1 {
+    color: #b0d6ff;
+    text-shadow: 0 0 15px rgba(176, 214, 255, 0.5);
+}
+
+/* Gen Z Words Translator Text */
+.gen-z-words-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0078ff;
+    text-align: center;
+    margin-top: 30px;
+    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+/* Dark Mode Gen Z Words Translator Text */
+body.dark-mode .gen-z-words-title {
+    color: #66d9ff;
+    text-shadow: 0 0 10px rgba(102, 217, 255, 0.5);
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    border-radius: 16px;
+    padding: 20px;
+    gap: 20px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Light Mode Container */
+body.light-mode .container {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode Container */
+body.dark-mode .container {
+    background: #1e2836;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Translation UI */
+.translation-ui {
+    flex: 1 1 100%;
+    background: #e7ecf1;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d0dae6;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* Dark Mode Translation UI */
+body.dark-mode .translation-ui {
+    background: #2b3b4e;
+    border: 1px solid #34495e;
+}
+
+/* History Section */
+.history-container {
+    flex: 1 1 100%;
+    background: #f0f4f8;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #d0dae6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background 0.3s;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+/* Dark Mode History Section */
+body.dark-mode .history-container {
+    background: #2b3b4e;
+    border: 1px solid #34495e;
+}
+
+/* Gen Z Words Sidebar */
+.gen-z-words-sidebar {
+    flex: 1 1 100%;
+    background: #e7ecf1;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #334e68;
+    border: 1px solid #d0dae6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+/* Dark Mode Sidebar */
+body.dark-mode .gen-z-words-sidebar {
+    background: #2b3b4e;
+    color: #b0d6ff;
+    border: 1px solid #34495e;
+}
+
+/* Buttons */
+.btn-3d {
+    background: linear-gradient(135deg, #546e91, #92a8c5);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+body.dark-mode .btn-3d {
+    background: linear-gradient(135deg, #34495e, #546e91);
+}
+
+.btn-3d:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Suggestion Container Styling */
+.suggestion-container p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.suggested-word {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.suggested-word:hover {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Animations */
+@keyframes text-glow {
+    0% {
+        text-shadow: 0 0 5px rgba(43, 78, 121, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(43, 78, 121, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(43, 78, 121, 0.5);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .translation-ui {
+        order: 1;
+    }
+
+    .history-container {
+        order: 2;
+    }
+
+    .gen-z-words-sidebar {
+        order: 3;
+    }
+
+    .gen-z-words-title {
+        order: 4;
+    }
+}
+
+/* Desktop Responsive */
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .translation-ui {
+        flex: 2;
+    }
+
+    .history-container {
+        flex: 1;
+        order: 1;
+    }
+
+    .gen-z-words-sidebar {
+        flex: 1;
+        order: 2;
+    }
+
+    .gen-z-words-title {
+        order: 3;
+    }
+}
